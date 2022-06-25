@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sarabyeet.travelapp.ui.fragments.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_siteDetailFragment"
+            app:destination="@id/siteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/siteDetailFragment"
+        android:name="com.sarabyeet.travelapp.ui.fragments.SiteDetailFragment"
+        android:label="Site Detail Fragment"
+        tools:layout="@layout/fragment_site_detail">
+        <argument
+            android:name="attractionId"
+            app:argType="string" />
+    </fragment>
+</navigation>
