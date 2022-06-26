@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.sarabyeet.travelapp.adapter.HomeFragmentAdapter
 import com.sarabyeet.travelapp.databinding.FragmentHomeBinding
 
 class HomeFragment: BaseFragment() {
@@ -21,7 +22,13 @@ class HomeFragment: BaseFragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val recyclerView = binding.homeRecyclerView
+        val homeAdapter = HomeFragmentAdapter{
+            // TODO: navigate
+        }
+
+        binding.homeRecyclerView.adapter = homeAdapter
+
+        homeAdapter.setData(emptyList())
     }
 
     override fun onDestroyView() {
