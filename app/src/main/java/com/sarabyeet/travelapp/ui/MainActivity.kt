@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     @OptIn(ExperimentalStdlibApi::class)
     private fun parseAttractions(): List<Attraction> {
         val attractionsFile =
-            resources.openRawResource(R.raw.crotia).bufferedReader().use { it.readText() }
+            resources.openRawResource(R.raw.sites).bufferedReader().use { it.readText() }
 
         val adapter = moshi.adapter<AttractionsResponse>()
         return adapter.fromJson(attractionsFile)?.attractions ?: emptyList()
