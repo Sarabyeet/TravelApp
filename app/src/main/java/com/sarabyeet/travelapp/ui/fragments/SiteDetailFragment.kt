@@ -15,6 +15,11 @@ class SiteDetailFragment : BaseFragment() {
     private val binding get() = _binding!!
 
     private val safeArgs: SiteDetailFragmentArgs by navArgs()
+    private val attraction: Attraction by lazy {
+        attractions.find {
+            it.id == safeArgs.attractionId
+        } ?: Attraction()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,9 +32,6 @@ class SiteDetailFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val attraction = attractions.find {
-            it.id == safeArgs.attractionId
-        } ?: Attraction()
 
         binding.apply {
             titleTextView.text = attraction.title
