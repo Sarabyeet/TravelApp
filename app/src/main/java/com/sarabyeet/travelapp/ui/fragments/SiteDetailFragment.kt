@@ -1,9 +1,9 @@
 package com.sarabyeet.travelapp.ui.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.navigation.fragment.navArgs
 import com.sarabyeet.travelapp.R
 import com.sarabyeet.travelapp.data.Attraction
@@ -33,6 +33,8 @@ class SiteDetailFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setHasOptionsMenu(true)
+
         binding.apply {
             titleTextView.text = attraction.title
             descriptionTextView.text = attraction.description
@@ -42,6 +44,23 @@ class SiteDetailFragment : BaseFragment() {
             factsTextView.setOnClickListener {
                 // TODO:  
             }
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_site_detail, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId){
+            R.id.menuItemLocation -> {
+                val locationUri = Uri.parse("geo:${attraction.location.latitude},${attraction.location.longitude}?q=${attraction.title}")
+                val mapIntent = Intent(Intent.ACTION_VIEW, locationUri)
+                mapIntent.setPackage("com.google.android.apps.maps")
+                startActivity(mapIntent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 

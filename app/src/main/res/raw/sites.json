@@ -131,6 +131,44 @@
         "It is the largest city on the Dalmatian Coast",
         "It is home to Diocletian’s Palace."
       ]
+    },
+    {
+      "id": "7d6ca428-f31f-4550-bca4-155c40bcc84d",
+      "title": "Shimla",
+      "image_urls": [
+        "https://images.livemint.com/img/2022/02/04/1600x900/PTI02-03-2022-000155A-0_1643968574317_1643968595482.jpg"
+      ],
+      "description": "The erstwhile summer capital of Britishers looks even more beautiful in winters. It is the capital town of Himachal Pradesh and is winter nirvana for honeymooners. Shimla is often called the \"White Winter Queen of India\" because this place is blanketed with snow during winters. Come in between mid-December-February to witness guaranteed snow in Shimla. It is when the famous town of Himachal Pradesh at its coldest; temperatures can drop as low that it goes into minus - truly a sight to behold. Feeling brave? Hit the trekking trails in Shimla and enjoy the Shimla Toy Train ride to witness splendid snow-flakes around you!",
+      "location": {
+        "latitude": "31.1048",
+        "longitude": "77.1734"
+      },
+      "months_to_visit": "October - March",
+      "facts": [
+        "Shimla has second oldest church in North India.",
+        "The Kalka-Shimla rail tunnel is haunted.",
+        "Shimla is situated atop seven major hills namely –Prospect Hill, Observatory Hill, Inveram Hill, Summer Hill, Jakhoo Hill, Elysium Hill and Bantony Hill.",
+        "Shimla has been named after Shyamala Devi, a form of goddess Mahakali, the ferocious aspect of Durga Devi. There is a popular Kali Bari Temple in Shimla which resembles a bit like the Dakshineshwar Kali Temple of Kolkata."
+      ]
+    },
+    {
+      "id": "3c1aa474-147e-4d64-b503-1926ec45373e",
+      "title": "Valley of Flowers National Park",
+      "image_urls": [
+        "https://www.tripsavvy.com/thmb/5Fs1w1GS2mNY19hEiLnPnLJlux0=/2126x1412/filters:fill(auto,1)/125986545-56a3bf3e3df78cf7727f0188.jpg"
+      ],
+      "description": "Located in the state of Uttarakhand, Valley of Flowers National Park is an enchanting, magical, and scintillating place to visit. It is a beautiful national park with a variety of flowers that blossoms during the rainy season. Known for its biodiversity and scenic beauty, Valley of Flowers National Park is home to many alpine shrubs, and beautiful meadows making it one of the best places to visit in monsoon in India.",
+      "location": {
+        "latitude": "30.4348",
+        "longitude": "79.3703"
+      },
+      "months_to_visit": "July - September",
+      "facts": [
+        "A UNESCO World Heritage Site.",
+        "Do it Yourself Trek, Best for Solo Travellers.",
+        "The land where Brahmakamal's bloom",
+        "Rare and endangered animal & birds species in Valley of Flowers"
+      ]
     }
   ]
 }
