@@ -22,9 +22,9 @@
         android:name="com.sarabyeet.travelapp.ui.fragments.SiteDetailFragment"
         android:label="Site Detail"
         tools:layout="@layout/fragment_site_detail">
-        <deepLink app:uri="https://www.travelapp.com/site/{attractionId}" />
-        <argument
-            android:name="attractionId"
-            app:argType="string" />
+<!--        <deepLink app:uri="https://www.travelapp.com/site/{attractionId}" />-->
+<!--        <argument-->
+<!--            android:name="attractionId"-->
+<!--            app:argType="string" />-->
     </fragment>
 </navigation>

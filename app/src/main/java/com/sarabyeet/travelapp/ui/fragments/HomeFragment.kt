@@ -25,18 +25,27 @@ class HomeFragment: BaseFragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val homeAdapter = HomeFragmentAdapter{
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSiteDetailFragment(it))
+        val homeAdapter = HomeFragmentAdapter{ attractionId->
+            activityViewModel.getAttraction(attractionId)
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSiteDetailFragment())
         }
 
         binding.homeRecyclerView.adapter = homeAdapter
         binding.homeRecyclerView.addItemDecoration(DividerItemDecoration(requireContext(), RecyclerView.VERTICAL))
 
-        homeAdapter.setData(attractions)
+        // Observing the underlying changes here
+        activityViewModel.attractionsListLiveData.observe(viewLifecycleOwner){ attractions ->
+            homeAdapter.setData(attractions)
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+//    activityViewModel.attractionsListLiveData.observe(viewLifecycleOwner){
+//        it.find { attraction ->
+//            attraction.id == safeArgs.attractionId
+//        } ?:
 }

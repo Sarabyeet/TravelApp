@@ -9,6 +9,6 @@ abstract class BaseFragment: Fragment() {
         (activity as MainActivity).navController
     }
 
-    protected val attractions
-        get() = (activity as MainActivity).attractionsList
+    protected val activityViewModel
+        get() = (activity as MainActivity).viewModel
 }
