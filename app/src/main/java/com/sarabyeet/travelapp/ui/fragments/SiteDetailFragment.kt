@@ -1,15 +1,8 @@
 package com.sarabyeet.travelapp.ui.fragments
 
-import android.app.AlertDialog
-import android.content.DialogInterface
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.*
-import androidx.navigation.fragment.navArgs
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.sarabyeet.travelapp.R
-import com.sarabyeet.travelapp.data.Attraction
 import com.sarabyeet.travelapp.databinding.FragmentSiteDetailBinding
 import com.sarabyeet.travelapp.ui.MainActivity
 import com.squareup.picasso.Picasso

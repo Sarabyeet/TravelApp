@@ -1,44 +1,6 @@
 {
   "attractions": [
     {
-      "id": "7d6ca428-f31f-4550-bca4-155c40bcc84d",
-      "title": "Shimla",
-      "image_urls": [
-        "https://images.livemint.com/img/2022/02/04/1600x900/PTI02-03-2022-000155A-0_1643968574317_1643968595482.jpg"
-      ],
-      "description": "The erstwhile summer capital of Britishers looks even more beautiful in winters. It is the capital town of Himachal Pradesh and is winter nirvana for honeymooners. Shimla is often called the \"White Winter Queen of India\" because this place is blanketed with snow during winters. Come in between mid-December-February to witness guaranteed snow in Shimla. It is when the famous town of Himachal Pradesh at its coldest; temperatures can drop as low that it goes into minus - truly a sight to behold. Feeling brave? Hit the trekking trails in Shimla and enjoy the Shimla Toy Train ride to witness splendid snow-flakes around you!",
-      "location": {
-        "latitude": "31.1048",
-        "longitude": "77.1734"
-      },
-      "months_to_visit": "October - March",
-      "facts": [
-        "Shimla has second oldest church in North India.",
-        "The Kalka-Shimla rail tunnel is haunted.",
-        "Shimla is situated atop seven major hills namely –Prospect Hill, Observatory Hill, Inveram Hill, Summer Hill, Jakhoo Hill, Elysium Hill and Bantony Hill.",
-        "Shimla has been named after Shyamala Devi, a form of goddess Mahakali, the ferocious aspect of Durga Devi. There is a popular Kali Bari Temple in Shimla which resembles a bit like the Dakshineshwar Kali Temple of Kolkata."
-      ]
-    },
-    {
-      "id": "3c1aa474-147e-4d64-b503-1926ec45373e",
-      "title": "Valley of Flowers National Park",
-      "image_urls": [
-        "https://www.tripsavvy.com/thmb/5Fs1w1GS2mNY19hEiLnPnLJlux0=/2126x1412/filters:fill(auto,1)/125986545-56a3bf3e3df78cf7727f0188.jpg"
-      ],
-      "description": "Located in the state of Uttarakhand, Valley of Flowers National Park is an enchanting, magical, and scintillating place to visit. It is a beautiful national park with a variety of flowers that blossoms during the rainy season. Known for its biodiversity and scenic beauty, Valley of Flowers National Park is home to many alpine shrubs, and beautiful meadows making it one of the best places to visit in monsoon in India.",
-      "location": {
-        "latitude": "30.4348",
-        "longitude": "79.3703"
-      },
-      "months_to_visit": "July - September",
-      "facts": [
-        "A UNESCO World Heritage Site.",
-        "Do it Yourself Trek, Best for Solo Travellers.",
-        "The land where Brahmakamal's bloom",
-        "Rare and endangered animal & birds species in Valley of Flowers"
-      ]
-    },
-    {
       "id": "687a58ab-1d73-4d4a-beae-68516b948fd7",
       "title": "Sali",
       "image_urls": [
@@ -168,6 +130,83 @@
       "facts": [
         "It is the largest city on the Dalmatian Coast",
         "It is home to Diocletian’s Palace."
+      ]
+    },
+    {
+      "id": "f9e3fecf-201f-412e-bd2e-63636e679aa9",
+      "title": "Ladakh",
+      "image_urls": [
+        "https://www.clubmahindra.com/blog/media/section_images/flawlessla-1f6b7482d9302f3.jpg"
+      ],
+      "description": "Ladakh is a real paradise for the solo travelers, this amazing tourist spot is famous for magnificent sceneries, the crystal clear blue skies, and the maximum mountain passes, with plenty of exciting adventure activities and of course the famous Buddhist Monasteries and the holy festivals. It is one of the best places to visit in August in India. Ladakh is renowned for its rich culture and traditional heritage. In Ladakh, you will be able to spot endangered wildlife species like Yak, Ibex, and Tibetan Antelope. Dotted with untouched lakes, rugged trails, and several hidden, Ladakh is a paradise for adventure fanatics. One can enjoy trekking in Ladakh, river rafting, camping, biking, safaris, etc. during monsoon in August.",
+      "location": {
+        "latitude": "34.2268",
+        "longitude": "77.5619"
+      },
+      "months_to_visit": "April - July",
+      "facts": [
+        "Ladakh has the largest telescope in Asia.",
+        "The Magnetic Hill, or the so-called ‘gravity hill’ is a hill that pulls you upwards. Interested to know the science behind it? Well, the hill is a downhill road. The surrounding slopes are carved out in such a way that it creates an illusion of an uphill road! It is located on the smoothly constructed Srinagar-Leh highway.",
+        "It is a land of the rare twin-humped Bactrian camels.",
+        "It is the land of the fascinating Kung Fu nuns."
+      ]
+    },
+    {
+      "id": "7d6ca428-f31f-4550-bca4-155c40bcc84d",
+      "title": "Shimla",
+      "image_urls": [
+        "https://images.livemint.com/img/2022/02/04/1600x900/PTI02-03-2022-000155A-0_1643968574317_1643968595482.jpg"
+      ],
+      "description": "The erstwhile summer capital of Britishers looks even more beautiful in winters. It is the capital town of Himachal Pradesh and is winter nirvana for honeymooners. Shimla is often called the \"White Winter Queen of India\" because this place is blanketed with snow during winters. Come in between mid-December-February to witness guaranteed snow in Shimla. It is when the famous town of Himachal Pradesh at its coldest; temperatures can drop as low that it goes into minus - truly a sight to behold. Feeling brave? Hit the trekking trails in Shimla and enjoy the Shimla Toy Train ride to witness splendid snow-flakes around you!",
+      "location": {
+        "latitude": "31.1048",
+        "longitude": "77.1734"
+      },
+      "months_to_visit": "October - March",
+      "facts": [
+        "Shimla has second oldest church in North India.",
+        "The Kalka-Shimla rail tunnel is haunted.",
+        "Shimla is situated atop seven major hills namely –Prospect Hill, Observatory Hill, Inveram Hill, Summer Hill, Jakhoo Hill, Elysium Hill and Bantony Hill.",
+        "Shimla has been named after Shyamala Devi, a form of goddess Mahakali, the ferocious aspect of Durga Devi. There is a popular Kali Bari Temple in Shimla which resembles a bit like the Dakshineshwar Kali Temple of Kolkata."
+      ]
+    },
+    {
+      "id": "3c1aa474-147e-4d64-b503-1926ec45373e",
+      "title": "Valley of Flowers National Park",
+      "image_urls": [
+        "https://www.tripsavvy.com/thmb/5Fs1w1GS2mNY19hEiLnPnLJlux0=/2126x1412/filters:fill(auto,1)/125986545-56a3bf3e3df78cf7727f0188.jpg"
+      ],
+      "description": "Located in the state of Uttarakhand, Valley of Flowers National Park is an enchanting, magical, and scintillating place to visit. It is a beautiful national park with a variety of flowers that blossoms during the rainy season. Known for its biodiversity and scenic beauty, Valley of Flowers National Park is home to many alpine shrubs, and beautiful meadows making it one of the best places to visit in monsoon in India.",
+      "location": {
+        "latitude": "30.4348",
+        "longitude": "79.3703"
+      },
+      "months_to_visit": "July - September",
+      "facts": [
+        "A UNESCO World Heritage Site.",
+        "Do it Yourself Trek, Best for Solo Travellers.",
+        "The land where Brahmakamal's bloom",
+        "Rare and endangered animal & birds species in Valley of Flowers"
+      ]
+    },
+    {
+      "id": "1b5d41de-b5dd-44df-a137-7e444edf2851",
+      "title": "Darjeeling",
+      "image_urls": [
+        "https://assets.telegraphindia.com/telegraph/2022/May/1653329872_892712d1-637d-4ec5-8b00-5e969c9a1603.jpg"
+      ],
+      "description": "Located close to the slopes of the majestic Himalayas, Darjeeling is one of the top hill stations in India to visit. Darjeeling is a famous tourist destination, especially for families and honeymooners. The magnetic charm of this beautiful hill station makes it one of the best places to visit in August in India. If you are a nature and adventure lover then this spot is an excellent choice you can explore the woodland trail in Senchal Wildlife Sanctuary, also trek to the Tiger Hill, boating at the lakes Mirik, Rock climbing at Tenzing Rock and Darjeeling Himalayan Railway ride can be enjoyed in August. This place is famed for the tea plantations on the slopes. Mt. Kanchenjunga, among the world’s highest peaks in the backdrop of this beautiful hill station.",
+      "location": {
+        "latitude": "27.036007",
+        "longitude": "88.262672"
+      },
+      "months_to_visit": "April - June",
+      "facts": [
+        "It’s Located In The Himalayan Foothills.",
+        "Some of the finest teas in the world are produced in Darjeeling. Darjeeling tea is a light- to medium-bodied black tea that is highly aromatic with fruity and floral tones. And true Darjeeling tea is only grown in this specific area of West Bengal, on just 87 estates.",
+        "The Darjeeling Himalayan Railroad Is A UNESCO World Heritage Site.",
+        "The Town Has An Amazing Cable Car Ropeway.",
+        "The Town Was Under British Rule For Hundreds Of Years."
       ]
     }
   ]

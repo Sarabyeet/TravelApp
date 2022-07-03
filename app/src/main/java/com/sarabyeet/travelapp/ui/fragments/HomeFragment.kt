@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import com.sarabyeet.travelapp.adapter.HomeFragmentAdapter
+import com.sarabyeet.travelapp.adapter.HomeFragmentController
 import com.sarabyeet.travelapp.databinding.FragmentHomeBinding
 
 class HomeFragment: BaseFragment() {
@@ -25,17 +25,18 @@ class HomeFragment: BaseFragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val homeAdapter = HomeFragmentAdapter{ attractionId->
+        val homeController = HomeFragmentController{ attractionId->
             activityViewModel.getAttraction(attractionId)
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSiteDetailFragment())
         }
 
-        binding.homeRecyclerView.adapter = homeAdapter
-        binding.homeRecyclerView.addItemDecoration(DividerItemDecoration(requireContext(), RecyclerView.VERTICAL))
+        binding.homeRecyclerView.setController(homeController)
+        //binding.homeRecyclerView.addItemDecoration(DividerItemDecoration(requireContext(), RecyclerView.VERTICAL))
 
+        homeController.isLoading = true
         // Observing the underlying changes here
         activityViewModel.attractionsListLiveData.observe(viewLifecycleOwner){ attractions ->
-            homeAdapter.setData(attractions)
+            homeController.attractions = attractions
         }
     }
 
@@ -44,8 +45,4 @@ class HomeFragment: BaseFragment() {
         _binding = null
     }
 
-//    activityViewModel.attractionsListLiveData.observe(viewLifecycleOwner){
-//        it.find { attraction ->
-//            attraction.id == safeArgs.attractionId
-//        } ?:
 }

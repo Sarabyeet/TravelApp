@@ -19,9 +19,13 @@ class AttractionsViewModel : ViewModel() {
 
     val factsDialogLiveData = MutableLiveData<Attraction>()
 
-    fun init(context: Context) {
-        val attractions = repository.parseAttractions(context)
-        attractionsListLiveData.postValue(attractions)
+     fun init(context: Context) {
+         viewModelScope.launch {
+             delay(2000L)
+             val attractions = repository.parseAttractions(context)
+             attractionsListLiveData.postValue(attractions)
+         }
+
     }
 
     fun getAttraction(attractionId: String) {

@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 .setTitle("${attraction.title} Facts")
                 .setMessage(message)
                 .setPositiveButton("Ok"
-                ) { dialog, which -> dialog.dismiss() }
+                ) { dialog, _ -> dialog.dismiss() }
                 .setCancelable(false)
                 .show()
         }
