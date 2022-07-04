@@ -70,8 +70,11 @@ dependencies {
     // Moshi with Codegen
     implementation "com.squareup.moshi:moshi-kotlin:1.13.0"
     kapt ("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
-    //Epoxy
+    // Epoxy
     def epoxy_version = "5.0.0-beta05"
     implementation "com.airbnb.android:epoxy:$epoxy_version"
     kapt("com.airbnb.android:epoxy-processor:$epoxy_version")
+
+    //
+    implementation 'me.relex:circleindicator:2.1.6'
 }

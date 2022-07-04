@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/siteDetailFragment"
-        android:name="com.sarabyeet.travelapp.ui.fragments.SiteDetailFragment"
+        android:name="com.sarabyeet.travelapp.ui.fragments.details.SiteDetailFragment"
         android:label="Site Detail"
         tools:layout="@layout/fragment_site_detail">
 <!--        <deepLink app:uri="https://www.travelapp.com/site/{attractionId}" />-->

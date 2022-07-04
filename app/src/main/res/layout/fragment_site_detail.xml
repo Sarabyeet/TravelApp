@@ -15,17 +15,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/headerImageView"
+            <com.airbnb.epoxy.EpoxyRecyclerView
+                android:id="@+id/header_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:scaleType="centerCrop"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/epoxy_header_images_view"
+                android:orientation="horizontal"
                 app:layout_constraintDimensionRatio="16:9"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/backgrounds/scenic[14]" />
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.relex.circleindicator.CircleIndicator2
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                app:ci_margin= "6dp"
+                app:ci_width="6dp"
+                app:ci_height="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/header_recycler_view"
+                app:layout_constraintEnd_toEndOf="@+id/header_recycler_view"
+                app:layout_constraintTop_toTopOf="@+id/titleTextView" />
+
 
             <TextView
                 android:id="@+id/titleTextView"
@@ -36,46 +49,61 @@
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@id/headerImageView"
+                app:layout_constraintBottom_toBottomOf="@id/header_recycler_view"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="Title" />
 
-            <TextView
-                android:id="@+id/descriptionTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/factsTextView"
-                app:layout_constraintEnd_toEndOf="parent"
+            <com.airbnb.epoxy.EpoxyRecyclerView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/contentDetailRecyclerView"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/titleTextView"
-                app:layout_constraintVertical_bias="0.0"
-                tools:text="@tools:sample/lorem[50]" />
-
-            <TextView
-                android:id="@+id/monthsToVisitTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:drawablePadding="8dp"
-                android:textSize="18sp"
-                android:textStyle="italic"
-                app:drawableStartCompat="@drawable/ic_baseline_flight_24"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:text="All year" />
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                android:orientation="vertical" />
 
-            <TextView
-                android:id="@+id/factsTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?selectableItemBackgroundBorderless"
-                android:padding="16dp"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:text="3 facts" />
+<!--            <TextView-->
+<!--                android:id="@+id/descriptionTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/factsTextView"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/titleTextView"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                tools:text="@tools:sample/lorem[50]" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/monthsToVisitTextView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="italic"-->
+<!--                app:drawableStartCompat="@drawable/ic_baseline_flight_24"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                tools:text="All year" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/factsTextView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="?selectableItemBackgroundBorderless"-->
+<!--                android:padding="16dp"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                tools:text="3 facts" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

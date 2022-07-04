@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.RecyclerView
 import com.sarabyeet.travelapp.adapter.HomeFragmentController
 import com.sarabyeet.travelapp.databinding.FragmentHomeBinding
 
@@ -31,7 +29,7 @@ class HomeFragment: BaseFragment() {
         }
 
         binding.homeRecyclerView.setController(homeController)
-        //binding.homeRecyclerView.addItemDecoration(DividerItemDecoration(requireContext(), RecyclerView.VERTICAL))
+        // binding.homeRecyclerView.addItemDecoration(DividerItemDecoration(requireContext(), RecyclerView.VERTICAL))
 
         homeController.isLoading = true
         // Observing the underlying changes here

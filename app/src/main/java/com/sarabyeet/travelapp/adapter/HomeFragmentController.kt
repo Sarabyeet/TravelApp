@@ -44,6 +44,7 @@ class HomeFragmentController(
                     || attraction.title.startsWith("Valley", ignoreCase = true)
                     || attraction.title.startsWith("shimla", true )
                     || attraction.title.startsWith("Darjeeling", ignoreCase = true)
+                    || attraction.title.startsWith("Patna", ignoreCase = true)
         }
 
         HeaderEpoxyModel("Local Sites", R.drawable.ic_round_location_on_24).id("header_view_local").addTo(this)
@@ -72,7 +73,6 @@ class HomeFragmentController(
             titleTextView.text = attraction.title
             monthsToVisitTextView.text = attraction.months_to_visit
             Picasso.get().load(attraction.image_urls[0]).into(headerImageView)
-
             root.setOnClickListener {
                 onClick(attraction.id)
             }

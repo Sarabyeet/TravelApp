@@ -25,7 +25,6 @@ class AttractionsViewModel : ViewModel() {
              val attractions = repository.parseAttractions(context)
              attractionsListLiveData.postValue(attractions)
          }
-
     }
 
     fun getAttraction(attractionId: String) {
